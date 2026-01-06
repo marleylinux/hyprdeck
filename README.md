@@ -36,3 +36,4 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 
 Put everything next to `hyprdeck.sh`:
 
+DOES NOT INCLUDE ON SCREEN KEYBOARD OR STEAM DECK TRACKPAD SUPPORT (WORKS IN GAME JUST NOT ON DESKTOP)
