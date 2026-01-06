@@ -474,8 +474,24 @@ install_mangohud()   { install_config_dir "MangoHud"   "$BOX_BLUE"; }
 install_nvim()       { install_config_dir "nvim"       "$BOX_GREEN"; }
 install_nwg_bar()    { install_config_dir "nwg-bar"    "$BOX_GREEN"; }
 install_nwg_drawer() { install_config_dir "nwg-drawer" "$BOX_GREEN"; }
-install_nwg_hello()  { install_config_dir "nwg-hello"  "$BOX_GREEN"; }
 install_nwg_panel()  { install_config_dir "nwg-panel"  "$BOX_GREEN"; }
+
+# ---- CHANGED: nwg-hello now installs system-wide into /etc/nwg-hello ----
+install_nwg_hello() {
+  local s; s="$(src_path "nwg-hello")"
+  [ -d "$s" ] || die "Missing source dir: $s"
+  local d="/etc/nwg-hello"
+
+  section "$BOX_GREEN" "nwg-hello -> /etc/nwg-hello"
+  p "$BOX_GREEN" "Overwrite: $d"
+  copy_dir_overwrite_to "$s" "$d"
+
+  # Keep it clean/consistent for system config
+  run_for_path "$d" chown -R root:root "$d"
+  run_for_path "$d" chmod -R 755 "$d"
+
+  p "$UI_OK" "Installed nwg-hello (system-wide)"
+}
 
 install_adw_gtk3() {
   local s; s="$(src_path "adw-gtk3v5.6.tar.xz")"
@@ -536,7 +552,7 @@ print_menu() {
   p "$BOX_GREEN"  "nvim                -> ~/.config/nvim                  (nvim/)"
   p "$BOX_GREEN"  "nwg-bar             -> ~/.config/nwg-bar               (nwg-bar/)"
   p "$BOX_GREEN"  "nwg-drawer          -> ~/.config/nwg-drawer            (nwg-drawer/)"
-  p "$BOX_GREEN"  "nwg-hello           -> ~/.config/nwg-hello             (nwg-hello/)"
+  p "$BOX_GREEN"  "nwg-hello           -> /etc/nwg-hello                  (nwg-hello/)"
   p "$BOX_GREEN"  "nwg-panel           -> ~/.config/nwg-panel             (nwg-panel/)"
 
   p "$BOX_PURPLE" "adw-gtk3 theme       -> /usr/share/themes               (adw-gtk3v5.6.tar.xz)"
@@ -603,4 +619,3 @@ main_loop() {
 }
 
 main_loop
-
