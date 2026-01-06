@@ -15,7 +15,6 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 - `vimrc` → `~/.vimrc`
 - 
 ### `~/.config`
-- `greetd/`
 - `hypr/`
 - `MangoHud/`
 - `nvim/`
@@ -25,6 +24,7 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 
 ### System
 - `pacman.conf` → `/etc/pacman.conf`
+- - `greetd/` /etc/greetd/
 - `cpupower` → `/etc/default/cpupower`
 - `adw-gtk3v5.6.tar.xz` → extracted to `/usr/share/themes`
 - `catppuccin-mocha-dark-cursors.zip` → extracted to `/usr/share/icons`
