@@ -13,7 +13,7 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 - `Pictures/` → `~/Pictures`
 - `bashrc` → `~/.bashrc`
 - `vimrc` → `~/.vimrc`
-
+- 
 ### `~/.config`
 - `greetd/`
 - `hypr/`
@@ -21,7 +21,6 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 - `nvim/`
 - `nwg-bar/`
 - `nwg-drawer/`
-- `nwg-hello/`
 - `nwg-panel/`
 
 ### System
@@ -29,6 +28,7 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 - `cpupower` → `/etc/default/cpupower`
 - `adw-gtk3v5.6.tar.xz` → extracted to `/usr/share/themes`
 - `catppuccin-mocha-dark-cursors.zip` → extracted to `/usr/share/icons`
+- - `nwg-hello/` → extracted to `/etc/nwg-hello`
 
 ---
 
