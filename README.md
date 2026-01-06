@@ -1,6 +1,6 @@
 # HyprDeck (MarleyLinux)
 
-HyprDeck is a small dotfiles installer for a **Steam Deck–style desktop setup on Arch Linux using Hyprland**.
+HyprDeck is a small dotfiles installer for a **Steam Deck desktop setup on Arch Linux using Hyprland**.
 
 It installs config folders into `~/.config`, dotfiles into your home directory, and system files into `/etc` + `/usr/share` (themes/icons).  
 **It overwrites targets (no backups).**
