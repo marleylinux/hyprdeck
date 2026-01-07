@@ -37,3 +37,10 @@ It installs config folders into `~/.config`, dotfiles into your home directory, 
 Put everything next to `hyprdeck.sh`:
 
 DOES NOT INCLUDE ON SCREEN KEYBOARD OR STEAM DECK TRACKPAD SUPPORT (WORKS IN GAME JUST NOT ON DESKTOP)
+
+
+
+#Extra steamdeck display in hyprland is eDP-1
+
+an example bind to make hyprland suspend would be: bind = , XF86PowerOff, exec, systemctl suspend volume buttons are XF86AudioRaiseVolume and XF86LowerVolume
+
