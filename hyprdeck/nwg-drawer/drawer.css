@@ -27,7 +27,9 @@ button:hover {
 
 #pinned-box {
     padding-bottom: 5px;
-    border-bottom: 1px dotted gray
+    border-bottom: 1px dotted gray;
+    border-radius: 15px
+
 }
 
 #files-box {
