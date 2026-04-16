@@ -1,7 +1,7 @@
 window {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 1);
-    border: rgba(255, 255, 255, 1) 3px solid;
+    border: rgba(255, 255, 255, 1) 2px solid;
     border-radius: 15px;
 }
 
@@ -9,7 +9,7 @@ window {
 entry {
    background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
-    border: rgba(255, 255, 255, 1) 3px solid;
+    border: rgba(255, 255, 255, 1) 2px solid;
     border-radius: 15px;
 }
 
