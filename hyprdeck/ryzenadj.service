@@ -1,0 +1,11 @@
+[Unit]
+Description=RyzenAdj power limits
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/ryzenadj --max-performance -a 65000 -b 65000 -c 65000 -d 0 -e 0 -f 95 --gfx-clk 2200
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
