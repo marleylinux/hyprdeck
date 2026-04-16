@@ -4,8 +4,8 @@ governor='performance'
 
 # Limit frequency range
 # Valid suffixes: Hz, kHz (default), MHz, GHz, THz
-min_freq="1.8GHz"
-max_freq="3.5GHz"
+min_freq="4.1GHz"
+max_freq="5.1GHz"
 
 # Specific frequency to be set.
 # Requires userspace governor to be available.
